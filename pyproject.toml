@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "passderive"
+dynamic = ["version"]
+description = "A deterministic, offline password derivation tool."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Ethan Shen", email = "shenyusen@example.invalid"},
+]
+keywords = [
+    "password",
+    "derive",
+    "deterministic",
+    "offline",
+    "security",
+    "pbkdf2",
+    "hmac",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Topic :: Security",
+    "Topic :: Security :: Cryptography",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "pyperclip",
+]
+
+[project.scripts]
+passderive = "passderive.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["passderive"]
+
+[tool.setuptools.package-data]
+passderive = [
+    "locale/*/LC_MESSAGES/*.mo",
+    "locale/*/LC_MESSAGES/*.po",
+]
+
+[tool.setuptools.dynamic]
+version = {attr = "passderive.__version__"}
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["test_core.py"]

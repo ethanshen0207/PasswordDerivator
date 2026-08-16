@@ -6,7 +6,7 @@ test_core.py — 密码生成核心的单元测试与兼容性回归测试
 
 import pytest
 import string
-from core import derive_sha256, assemble_password
+from src.passderive.core import derive_sha256, assemble_password
 
 
 # ============================================================

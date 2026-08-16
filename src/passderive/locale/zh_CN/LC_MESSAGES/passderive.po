@@ -1,0 +1,165 @@
+# Simplified gettext catalog for mycli (compiled by compile_locale.py).
+# Source strings are English; this file provides Simplified Chinese translations.
+# The GNU header entry (charset) is injected by compile_locale.py at build time.
+
+msgid "local password generator"
+msgstr "本地密码派生器"
+
+msgid "Derive a password."
+msgstr "派生密码。"
+
+msgid "Manage the non-secret parameter presets."
+msgstr "管理非秘密参数预设。"
+
+msgid "Add a new preset."
+msgstr "添加新预设。"
+
+msgid "List all presets."
+msgstr "列出所有预设。"
+
+msgid "Remove a preset."
+msgstr "删除预设。"
+
+msgid "Edit an existing preset."
+msgstr "编辑现有预设。"
+
+msgid "Identifier (e.g. 'google', 'xiaohongshu' etc.)"
+msgstr "标识 (如 'google'、'小红书'等)"
+
+msgid "Note (e.g. 'work', 'alt account' etc.), none by default"
+msgstr "备注 (如 '工作'、'小号'等)，默认无"
+
+msgid "Preset ID or name to use."
+msgstr "要使用的预设 ID 或名字。"
+
+msgid "Preset ID or name."
+msgstr "预设 ID 或名字。"
+
+msgid "Preset name."
+msgstr "预设名。"
+
+msgid "New preset name."
+msgstr "新的预设名。"
+
+msgid "Password length (temporary override)."
+msgstr "密码长度（临时覆盖预设）。"
+
+msgid "Password length."
+msgstr "密码长度。"
+
+msgid "Fast mode: only enter the password and salt once"
+msgstr "启动快速模式，只用填写一次密码和盐"
+
+msgid "Disable special characters"
+msgstr "不启用特殊字符"
+
+msgid "Custom special characters (temporary override)."
+msgstr "自定义特殊字符（临时覆盖预设）。"
+
+msgid "Custom special characters."
+msgstr "自定义特殊字符。"
+
+msgid "Print the password directly. **Dangerous!**"
+msgstr "直接打印密码。**危险！**"
+
+msgid "Warning: Your password is too short and is not secure! We recommend setting it to at least 8 characters."
+msgstr "警告：字符串过短，安全性较低！建议至少设置为8位以上。"
+
+msgid "Warning: You have chosen to print your password; please ensure you are in a secure environment!"
+msgstr "警告：你选择了打印密码，请注意环境安全！"
+
+msgid "Warning: Disabling special characters conflicts with custom special characters! The programme will generate a version with special characters disabled."
+msgstr "警告：禁用特殊符号与自定义特殊符号矛盾！程序将生成禁用符号的版本。"
+
+msgid "Note: Please ensure you remember your own set of special characters {chars}"
+msgstr "提示：您自定义了标点符号集，请务必牢记以下自定义内容 {chars}"
+
+msgid "Warning: It looks like you have entered a URL as the identifier: {site}. For stability, please use a short, memorable name instead."
+msgstr "警告：您似乎输入了一个 URL 作为标识：{site}。为保证稳定，建议改用简短易记的名称。"
+
+msgid "Warning: It looks like you have entered an IP address as the identifier: {site}. If the address is private or changes, the password will no longer be retrievable."
+msgstr "警告：您似乎输入了一个 IP 地址作为标识：{site}。若该地址为私有地址或发生变化，密码将无法复现。"
+
+msgid "Note: We have standardised the identifier you entered: {identifier}"
+msgstr "提示：我们将您输入的标识进行了规范化：{identifier}"
+
+msgid "Generating a password for the identifier “{identifier}”..."
+msgstr "为标识 '{identifier}' 生成密码..."
+
+msgid "Using preset {id} '{name}' (length {length}, symbols {symbols})"
+msgstr "使用预设 {id} '{name}'（长度 {length}，符号 {symbols}）"
+
+msgid "Using preset {id} '{name}' (length {length}, no symbols)"
+msgstr "使用预设 {id} '{name}'（长度 {length}，无符号）"
+
+msgid "Enter the password:"
+msgstr "请输入主密码："
+
+msgid "Enter the confirm password:"
+msgstr "请再次输入主密码："
+
+msgid "Enter the salt:"
+msgstr "请输入盐："
+
+msgid "Enter the confirm salt:"
+msgstr "请再次输入盐："
+
+msgid "The two entries do not match!"
+msgstr "两次输入不一致！"
+
+msgid "Try again! {time}/3"
+msgstr "请重试！{time}/3"
+
+msgid "The programme will exit."
+msgstr "程序将退出。"
+
+msgid "\nPassword generated:"
+msgstr "\n已生成密码："
+
+msgid "Please clear the screen promptly."
+msgstr "请及时清空屏幕。"
+
+msgid "\nThe password has been copied to the clipboard and will be cleared in 10 seconds."
+msgstr "\n密码已生成在剪切板，10秒内清除。"
+
+msgid "The password has been reset. Please generate a new one."
+msgstr "密码已经被清除。请重新生成。"
+
+msgid "Preset not found: {ref}"
+msgstr "未找到预设：{ref}"
+
+msgid "Preset name must not be empty."
+msgstr "预设名不能为空。"
+
+msgid "Preset name must not be numeric."
+msgstr "预设名不能为纯数字。"
+
+msgid "Preset name 'default' is reserved."
+msgstr "预设名 'default' 已保留。"
+
+msgid "Preset name already exists: {name}"
+msgstr "预设名已存在：{name}"
+
+msgid "Length too short: need at least {minimum} characters."
+msgstr "长度过短：至少需要 {minimum} 个字符。"
+
+msgid "Cannot remove the default preset (0 'default')."
+msgstr "不能删除默认预设 (0 'default')。"
+
+msgid "Presets:"
+msgstr "预设列表："
+
+msgid "(default)"
+msgstr "（默认）"
+
+msgid "(no symbols)"
+msgstr "（无符号）"
+
+msgid "Added preset {id} '{name}'."
+msgstr "已添加预设 {id} '{name}'。"
+
+msgid "Removed preset {id} '{name}'."
+msgstr "已删除预设 {id} '{name}'。"
+
+msgid "Updated preset {id} '{name}'."
+msgstr "已更新预设 {id} '{name}'。"
